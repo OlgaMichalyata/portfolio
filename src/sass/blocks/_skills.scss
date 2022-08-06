@@ -1,0 +1,95 @@
+.skills {
+    min-height: 1024px;
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        z-index: 2;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        } 
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__items {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, minmax(270px, auto));
+        gap: 13px;
+    }
+    &__item {
+        border: 1px solid black;
+        padding: 30px;
+        &_image {
+            min-height: 65px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &_title {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+        &_descr {
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+    &__sliders {
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        column-gap: 45px;
+        row-gap: 30px;
+    }
+    &__slider {
+        display: grid;
+        grid-template: 21px 14px/200px 35px;
+        justify-content: space-between;
+        align-content: space-between;
+        &_slider {
+            width: 350px;
+            height: 14px;
+            background-color: #E8E4DE;
+            border-radius: 4px;
+            grid-column: 1 / 3;
+            span {
+                display: block;
+                background-color: #FFA501;
+                border-radius: 4px;
+                height: 100%;
+            }
+        }
+        &_name {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+            @include before_circle;
+            position: relative;
+            z-index: 2;
+            padding-left: 16px;
+            &::before {
+                top: -30%;
+            }
+        }
+        &_percent {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+    }
+}
