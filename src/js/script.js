@@ -15,4 +15,4 @@ const counters = document.querySelectorAll('.skills__slider_percent'),
 
 counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
-})  
+});
