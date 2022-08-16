@@ -3,6 +3,8 @@
     padding-top: 120px;
     &__photo img{
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     &__2big-grid-elem {
         padding: 0 50px;
@@ -25,7 +27,7 @@
         margin-bottom: 6px;
     }
     &__text {
-        width: 570px;
+        width: 100%;
         margin-top: 20px;
         text-align: justify;
         font-size: 14px;
