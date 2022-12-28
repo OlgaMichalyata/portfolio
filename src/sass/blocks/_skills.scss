@@ -11,17 +11,23 @@
     &__item {
         border: 1px solid black;
         padding: 30px;
+        border-radius: 8px;
         &_image {
             min-height: 65px;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
+            img {
+                height: 120px;
+                width: 120px;
+            }
         }
         &_title {
             margin-top: 20px;
             font-weight: 700;
             font-size: 14px;
             line-height: 21px;
+            text-align: center;
             color: #000000;
         }
         &_descr {

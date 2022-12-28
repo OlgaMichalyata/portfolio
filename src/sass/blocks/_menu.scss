@@ -12,7 +12,7 @@
         display: block;
         width: 30px;
         height: 3px;
-        background-color: #151812;
+        background-color: $main-color;
     }
     span.long {
         width: 36px;
@@ -75,19 +75,37 @@
             }
         }
         a {
-            color: #fff;
+            color: rgb(0, 0, 0);
             text-decoration: none;
         }
     }
     &__social {
-        width: 90px;
+        width: 180px;
         position: absolute;
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        a {
+            text-decoration: none;
+            padding: 0 8px;
+        }
+        &_flex {            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &_languages{
+            display: flex;
+            padding-top: 20px;
+            justify-content: space-between;
+            &-item {
+                font-size: 19px;
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
     }
     &__overlay {
         position: fixed;

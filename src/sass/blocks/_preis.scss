@@ -3,7 +3,7 @@
     &__services {
         display: grid;
         grid-template-columns: repeat(2, minmax(370px, auto));
-        grid-template-rows: repeat(3, minmax(44px, auto));
+        grid-template-rows: repeat(8, minmax(15px, auto));
         justify-content: space-between;
         align-content: space-between;
         row-gap: 15px;
@@ -23,27 +23,13 @@
                     top: 9%;
                     left: -25px;
                 }
-                font-weight: 700;
+                font-weight: 500;
                 font-size: 14px;
                 line-height: 21px;
                 color: #000000;
                 position: relative;
                 z-index: 2;
                 row-gap: 5px;
-            }
-            &-preis {
-                font-weight: 700;
-                font-size: 14px;
-                line-height: 21px;
-                color: #000000;
-                justify-self: end;
-            }
-            &-descr {
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 18px;
-                color: #000000;
-                grid-column: 1 / 3;
             }
         }
     }

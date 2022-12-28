@@ -1,5 +1,5 @@
 .contacts {
-    padding: 120px 0 90px 0;
+    padding: 120px 0 25px 0;
     &__wrapper {
         padding: 0 35px 0 52px;
         display: grid;
@@ -30,6 +30,9 @@
     }
     &__text, &__social {
         margin-top: 20px;
+        a {
+            text-decoration: none;
+        }
     }
     &__link {
         margin-right: 25px;
