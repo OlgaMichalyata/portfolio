@@ -1,13 +1,15 @@
 .hamburger {
-    position: absolute;
-    top: 20px;
-    right: 30px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
     height: 21px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    margin:20px;
     cursor: pointer;
+    z-index: 10;
     span {
         display: block;
         width: 30px;
@@ -55,6 +57,7 @@
     &__link {
         position: relative;
         font-weight: bold;
+        text-transform: uppercase;
         font-size: 24px;
         line-height: 36px;
         margin-bottom: 15px;

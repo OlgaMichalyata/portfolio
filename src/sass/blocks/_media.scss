@@ -30,13 +30,9 @@
     }
     .skills {
         &__items {
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
         
-        }
-        #seven {
-            grid-column: 2 / 3;
-            grid-row: 3 / 4;
         }
         &__sliders {
             margin-top: 100px;
@@ -52,10 +48,10 @@
     }
     .portfolio {
         &__wrapper { 
-            grid-template-columns: repeat(auto-fit, 280px);
-            grid-auto-rows: 280px;
+            grid-template-columns: repeat(auto-fit, 455px);
+            grid-auto-rows: 455px;
             justify-content: space-around;
-            row-gap: 35px;
+            row-gap: 30px;
             .horizontal {
                 grid-row: unset;
                 grid-column: unset;
@@ -81,7 +77,7 @@
 
 @media (max-width: 992px) {
     .container {
-        max-width: 720px; 
+        max-width: 800px; 
     }
     .title {
         &_fz36 {
@@ -117,6 +113,12 @@
         }
         &__text {
             margin-top: 10px;
+        }
+    }
+    .portfolio {
+        &__wrapper { 
+            grid-template-columns: repeat(auto-fit, 370px);
+            grid-auto-rows: 370px;            
         }
     }
     .resume {
@@ -171,7 +173,10 @@
         &__descr_part2 {
             grid-template-columns: 260px 260px;
             grid-template-rows: repeat(2,minmax(120px, auto));
-        }        
+        }   
+        &__photo img{
+            object-fit: contain;
+        }     
     }
     .resume {
         padding-top: 70px;
@@ -204,13 +209,13 @@
         &__sliders {
             grid-template-columns: repeat(2,250px);
         }
-        #seven {
-            grid-column: 1 / 3;
-            grid-row: 4 / 5;
-        }
     }
     .portfolio {
         padding-top: 40px;
+        &__wrapper { 
+            grid-template-columns: repeat(auto-fit, 537px);
+            grid-auto-rows: 537px;            
+        }
     }
     .preis {
         padding-top: 40px;
@@ -238,9 +243,7 @@
             font-size: 24px;
         }
     }
-    .hamburger {
-        right: 20px;
-    }
+
     .menu {
         &__block {
             width: 300px;
@@ -248,7 +251,7 @@
         }
     }
     .promo {
-        background: url('../img/main_bg.jpg') no-repeat 57%/cover;
+        background: url('../img/olga_bg1.jpg') no-repeat 57%/cover;
         &__btns {
           margin-top: 30px;  
         }
@@ -276,8 +279,8 @@
     .skills {
         padding-top: 40px;
         &__items {
-            grid-template-columns: 270px;
-            grid-template-rows: repeat(4, 270px);
+            grid-template-columns: 290px;
+            grid-template-rows: repeat(4, 290px);
             justify-content: center;
         }
         #seven {
@@ -289,7 +292,22 @@
             grid-template-rows: repeat(6, 60px);
             margin-top: 50px;
         }
+        &__item {
+            padding: 20px;
+            &_descr{
+                margin-top: 10px;
+            }
+            &_title{
+                margin-top: 15px;
+            }
+        }   
 
+    }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 380px);
+            grid-auto-rows: 380px;
+        }
     }
     .title {
         &_fz36 {
@@ -313,7 +331,7 @@
         }
         &__form {
             column-gap: 10px;
-            grid-template-columns: 300px;
+            grid-template-columns: 100%;
             grid-template-rows: 45px 45px 190px;
             column-gap: 0;
         }
@@ -332,9 +350,71 @@
         &__policy {
             position: absolute;
             top: 0;
-            width: 180px;
+            width: 216px;
             left: 50%;
             transform: translateX(-50%);
         }
     }
+}
+
+@media (max-width: 380px) {
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 300px);
+            grid-auto-rows: 300px;
+        }
+    }
+}
+
+@media (max-height: 560px) {
+    .menu{
+        &__social {
+            bottom: 35px;
+            &_languages {
+                padding-top: 5px;
+            }
+        }
+        
+        &__block {
+            padding: 80px 0 20px 10px;
+        }
+    }
+
+}
+@media (max-height: 460px) {
+    .menu{
+        &__social {
+            bottom: 20px;
+        }
+        &__close svg{
+            width: 24px;
+        }
+        &__link {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        
+        &__block {
+            padding: 60px 0 20px 10px;
+        }
+    }
+
+}
+
+@media (max-height: 394px) {
+    .menu{
+       
+        &__link {
+            font-size: 15px;
+            line-height: 20px;
+            &:before {
+                top: 0;
+            }
+        }
+        
+        &__block {
+            padding: 70px 0 20px 10px;
+        }
+    }
+
 }

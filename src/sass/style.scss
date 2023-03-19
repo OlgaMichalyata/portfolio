@@ -13,6 +13,7 @@
 .container {
     width: 1140px;
     margin: 0 auto;
+    position: relative;
 }
 
 .divider {
@@ -35,4 +36,7 @@
 @import 'blocks/contacts';
 @import 'blocks/languages';
 @import 'blocks/privacy';
+@import 'blocks/styles_de.scss';
+
+
 @import 'blocks/media';
