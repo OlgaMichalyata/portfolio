@@ -1,0 +1,15 @@
+a.backButton {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 4px;
+    transition: 1s all;
+    &:hover{
+        background-color: rgb(31, 44, 146);
+        color: antiquewhite;
+    }
+}
+.footerPolicy {
+    height: 50px;
+}
